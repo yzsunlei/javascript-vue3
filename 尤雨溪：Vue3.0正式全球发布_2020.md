@@ -1,0 +1,68 @@
+## 尤雨溪：Vue3.0正式全球发布会_2020
+
+- 本文只是针对视频内容的重点整理，如若不清楚的地方请看文末链接的现场视频内容。
+
+### 性能方面的优化
+- 路由懒加载
+- keep-alive缓存页面
+- 使用v-show复用DOM
+- v-for 遍历避免同时使用 v-if
+- 长列表性能优化
+- 事件的销毁
+- 图片懒加载
+- 第三方插件按需引入
+- 无状态的组件标记为函数式组件
+- 子组件分割
+- 变量本地化
+- SSR
+
+### 更好的TypeScript集成
+- 改进的TypeScript支持，编辑器能提供强有力的类型检查和错误及警告
+- 更好的调试支持
+
+### 用于处理大规模用例的新API
+- reactive
+- ref
+- computed
+- readonly
+- watchEffect
+- watch
+- unref
+- toRef
+- toRefs
+- isRef
+- isProxy
+- isReactive
+- isReadonly
+- customRef
+- markRaw
+- shallowReactive
+- shallowReadonly
+- shallowRef
+- toRaw
+
+### 分层内部模块
+- 内部结构已被彻底重写为一组解耦的模块。新的体系结构提供了更好的可维护性，并允许最终用户通过摇树来减少运行时大小的一半。
+- 编译器支持用于构建时自定义的自定义AST转换（例如，构建时i18n）
+- 核心运行时提供API用于创建针对不同渲染目标（例如本机移动设备，WebGL或终端）的自定义渲染器
+- @vue/reactivity模块导出的功能可以直接访问Vue的响应系统，并且可以用作独立程序包
+
+### composition-api设计目的
+- 旨在解决大型应用程序中Vue使用的难点。 Composition API建立在Reactivity API之上，与2.x基于对象的API相比，可实现类似于React Hooks的逻辑组成和重用，更灵活的代码组织模式以及更可靠的类型推断。
+
+### 性能改进(相对Vue2)
+- 通过tree-sharking(减轻了多达41％的资源大小)
+- 初始渲染（加快了多达55％的速度）
+- 更新速度（加快了133％的速度）
+- 内存占用（最多减少54％）
+
+### 提供的两个实验性功能
+- 单文件组件 Composition API 语法糖 (<script setup>)
+- 单文件组件状态驱动的 CSS 变量 (<style vars>)
+
+### 相关资料
+- [https://github.com/vuejs/vue-next](https://github.com/vuejs/vue-next)
+- [https://v3.cn.vuejs.org/guide/migration/introduction.html#%E6%A6%82%E8%A7%88](https://v3.cn.vuejs.org/guide/migration/introduction.html#%E6%A6%82%E8%A7%88)
+- [http://www.yyyweb.com/5391.html](http://www.yyyweb.com/5391.html)
+- [尤雨溪：Vue3.0正式全球发布会视频](https://www.bilibili.com/video/BV1iA411J7cA/)
+- [https://www.vuemastery.com/courses-path/vue3](https://www.vuemastery.com/courses-path/vue3)
